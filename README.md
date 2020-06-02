@@ -404,7 +404,7 @@ Here's an equivalent code in JavaScript, for those who want to try it as an app:
 
 ```javascript
 const axios = require('axios')
-await axios.post("http://localhost:3013/api", {
+axios.post("http://localhost:3013/api", {
   channel: "tester",
   set: {
     "5e696db21c57cef74c439ba2d30563e29c11f50f7c492fc0f653c6fa54a77c85": {
@@ -466,7 +466,7 @@ Here's an example:
 
 ```javascript
 const axios = require('axios')
-await axios.post("http://localhost:3013/api", {
+axios.post("http://localhost:3013/api", {
   channel: "txt",
   set: {
     "3b46c28a8fcf20db39c166e58fa6bc98f39bc817b53a49b6df123973809fc83b": {
@@ -817,7 +817,7 @@ The transactions may be signed or unsigned, broadcasted or pre-broadcast, there 
 
 There are many more ways to use TXT, and it all depends on how YOU use it.
 
-Let's discuss all the possibilities in the chatroom: https://t.me/joinchat/RDiQsxxVwpFx-TDbD4tt8A
+Come join the discussions in the developer chatroom: https://t.me/joinchat/RDiQsxxVwpFx-TDbD4tt8A
 
 
 

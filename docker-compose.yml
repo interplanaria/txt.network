@@ -1,0 +1,23 @@
+version: '3.5'
+services:
+  txt:
+    image: planaria/txt:0.0.1
+    stdin_open: true
+    volumes:
+      - ./mnt:/root/mnt
+    environment:
+      - NAME=
+      - DESCRIPTION=
+      - MINER_URL=https://merchantapi.taal.com
+      - TOKEN=
+    ports:
+      - "3013:3013"
+    networks:
+      - txt
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "100m"
+networks:
+  txt:
+    name: txt

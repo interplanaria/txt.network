@@ -3,7 +3,6 @@
 > Semantic Bitcoin Storage
 
 
-
 ![tape](tapeplayer.gif)
 
 TXT (Transaction Tape) is a portable Bitcoin transaction storage system which lets you store, manage, and share bitcoin transaction bundles with semantic metadata attached.

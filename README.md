@@ -837,13 +837,13 @@ Let's walk through how the environment variables work. First here's what the def
 version: '3.5'
 services:
   txt:
-    image: planaria/txt:0.0.5
+    image: planaria/txt:0.0.1
     stdin_open: true
     volumes:
       - ./mnt:/root/mnt
     environment:
-      - NAME=c.txt
-      - DESCRIPTION=Bitcoin content addressable file system search engine
+      - NAME=
+      - DESCRIPTION=
       - MINER_URL=https://merchantapi.taal.com
       - TOKEN=
     ports:
@@ -869,3 +869,30 @@ The attributes to note are:
 - **ports**
   - by default TXT uses the port 3013. you can configure the exposed port by modifying this part. Learn more here: https://docs.docker.com/compose/compose-file/#ports
 
+Here's an example:
+
+```yaml
+version: '3.5'
+services:
+  txt:
+    image: planaria/txt:0.0.5
+    stdin_open: true
+    volumes:
+      - ./mnt:/root/mnt
+    environment:
+      - NAME=c.txt
+      - DESCRIPTION=Bitcoin content addressable file system search engine
+      - MINER_URL=https://merchantapi.taal.com
+      - TOKEN=852a6f54d6406855721a31bd8cd00f36f4d54d2fcb85d41a410a1c58544db0d0
+    ports:
+      - "3013:3013"
+    networks:
+      - txt
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "100m"
+networks:
+  txt:
+    name: txt
+```

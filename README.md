@@ -318,7 +318,7 @@ So how do you do this? Nothing! All you need to do is just run TXT and start pus
 
 # Quickstart
 
-## 0. Install Docker
+## 1. Install Docker
 
 TXT runs on Docker. If you don't have Docker installed, let's first take care of this.
 
@@ -357,7 +357,7 @@ For Windows and Mac, the only thing you need to do is install Docker desktop:
 
 <br>
 
-## 1. Start TXT
+## 2. Start TXT
 
 First create a workspace directory. 
 
@@ -384,7 +384,7 @@ If you see the following screen, you're all ready to go!:
 
 ![bootstrap](bootstrap.png)
 
-## 2. Write
+## 3. Write
 
 ### a. Transaction ID + Metadata
 
@@ -491,7 +491,7 @@ await axios.post("http://localhost:3013/api", {
 
 
 
-## 3. Read
+## 4. Read
 
 Finally, let's check out what the machine readable API for this transaction looks like. Scroll up to the top and click the "API" button at the top left corner. You will see the following JSON:
 
@@ -546,6 +546,16 @@ As you can see, the response contains everything you've programmatically pushed 
 Making use of these APIs should be straightforward since these are just simple JSON objects or arrays.
 
 
+
+## 5. What Next?
+
+To learn more about the APIs in detail, read [API Reference](#api-reference).
+
+To learn some potential use cases, check out the [use cases section](#use-cases).
+
+To contribute to this documentation page, check out [GitHub](https://github.com/interplanaria/txt.network).
+
+To ask questions and share ideas and modules, [join the chat](https://t.me/joinchat/RDiQsxxVwpFx-TDbD4tt8A).
 
 ---
 

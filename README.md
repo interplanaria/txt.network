@@ -368,7 +368,7 @@ mkdir hellotxt && cd hellotxt
 Now, copy and paste the following command to get started:
 
 ```
-curl https://txt.network/docker-compose.yml && docker-compose up -d
+curl https://txt.network/docker-compose.yml > docker-compose.yml && docker-compose up -d
 ```
 
 > Note: You can also run the docker container directly through:

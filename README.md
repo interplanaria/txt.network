@@ -825,6 +825,8 @@ Come join the discussions in the developer chatroom: https://t.me/joinchat/RDiQs
 
 # Advanced
 
+## 1. Docker Configuration
+
 The TXT container has a default configuration which makes it easy to get up and running very quickly.
 
 However you may want to learn how to customize the settings if you want more flexibility and security.
@@ -863,6 +865,7 @@ The attributes to note are:
   - **NAME:** name of the TXT repository. shoows up on the explorer web app's meta tag
   - **DESCRIPTION**: description of the TXT repository. shows up on the explorer web app's meta tag
   - **MINER_URL:** Merchant API root path. Learn more here: https://github.com/bitcoin-sv-specs/brfc-merchantapi
+  - **MINER_HEADERS:** The request header for Merchant API requests. In the future, miners may require authentication tokens to make requests to their APIs, and this attribute will be handy. For an example, check out https://txt.network/mempool.yml
   - **TOKEN**: API Token for making POST requests to TXT. By default it's empty, which allows anyone to write to TXT. When running TXT in production, you may want to set your own secret token here. Then you will need to set the **"token"** attribute in the header whenever you make POST requests to TXT.
 - **ports**
   - by default TXT uses the port 3013. you can configure the exposed port by modifying this part. Learn more here: https://docs.docker.com/compose/compose-file/#ports
@@ -894,3 +897,47 @@ networks:
   txt:
     name: txt
 ```
+
+
+
+## 2. Choose Your Miner
+
+To make it easy for you, below are the custom startup commands for running TXT for different miners (in alphabetical order). Once you download the docker-compose.yml files you can further customize them.
+
+---
+
+### 1. Matterpool
+
+https://matterpool.io/
+
+![matterpool](matterpool.png)
+
+```
+curl https://txt.network/matterpool.yml > docker-compose.yml && docker-compose up -d
+```
+
+---
+
+### 2. Mempool.com
+
+https://www.mempool.com/
+
+![mempool](mempool.png)
+
+```
+curl https://txt.network/mempool.yml > docker-compose.yml && docker-compose up -d
+```
+
+---
+
+### 3. TAAL
+
+https://www.taal.com/
+
+![taal](taal.png)
+
+```
+curl https://txt.network/taal.yml > docker-compose.yml && docker-compose up -d
+```
+
+---

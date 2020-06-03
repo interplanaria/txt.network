@@ -8,7 +8,8 @@ services:
     environment:
       - NAME=
       - DESCRIPTION=
-      - MINER_URL=https://merchantapi.taal.com
+      - MINER_URL=https://www.ddpurse.com/openapi
+      - 'MINER_HEADERS={"token": "561b756d12572020ea9a104c3441b71790acbbce95a6ddbf7e0630971af9424b"}'
       - TOKEN=
     ports:
       - "3013:3013"

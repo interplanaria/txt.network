@@ -11,7 +11,7 @@ TXT (Transaction Tape) is a portable Bitcoin transaction storage system which le
 
 # What is it?
 
-Just like how [Content Management Systems (CMS)](https://en.wikipedia.org/wiki/Content_management_system)  provide an easy way to store and manage content, TXT provides an easy way to store, organize, and mange Bitcoin transactions through semantic metadata.
+Just like how [Content Management Systems (CMS)](https://en.wikipedia.org/wiki/Content_management_system)  provide an easy way to store and manage content, TXT provides an easy way to store, organize, and manage Bitcoin transactions through semantic metadata.
 
 Simply save bitcoin transaction IDs or raw transactions to your TXT, and you immediately get all the powerful features for your transaction collection right out of the box, such as:
 
@@ -916,6 +916,8 @@ https://matterpool.io/
 curl https://txt.network/matterpool.yml > docker-compose.yml && docker-compose up -d
 ```
 
+> check the docker-compose.yml file before running: https://txt.network/matterpool.yml
+
 ---
 
 ### 2. Mempool.com
@@ -928,6 +930,8 @@ https://www.mempool.com/
 curl https://txt.network/mempool.yml > docker-compose.yml && docker-compose up -d
 ```
 
+> check the docker-compose.yml file before running: https://txt.network/mempool.yml
+
 ---
 
 ### 3. TAAL
@@ -939,5 +943,7 @@ https://www.taal.com/
 ```
 curl https://txt.network/taal.yml > docker-compose.yml && docker-compose up -d
 ```
+
+> check the docker-compose.yml file before running: https://txt.network/taal.yml
 
 ---

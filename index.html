@@ -28,6 +28,16 @@
       maxLevel: 2,
       themeColor: "black",
     }
+    document.addEventListener("DOMContentLoaded", () => {
+      setTimeout(() => {
+        let q = location.hash.split("=")
+        let id = q[1]
+        console.log("id = ", id)
+        const el = document.getElementById(id);
+        const y = el.getBoundingClientRect().top + window.pageYOffset;
+        window.scrollTo({top: y});
+      }, 1000)
+    })
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
   <script src="prism-json.min.js"></script>

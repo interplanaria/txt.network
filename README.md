@@ -510,8 +510,6 @@ Finally, let's check out what the machine readable API for this transaction look
       "image": "https://x.bitfs.network/5e696db21c57cef74c439ba2d30563e29c11f50f7c492fc0f653c6fa54a77c85.out.0.3",
       "description": "bitpic for 644@moneybutton.com"
     },
-    "message": null,
-    "username": "tester",
     "tags": "bitpic,bitcom",
     "id": "5e696db21c57cef74c439ba2d30563e29c11f50f7c492fc0f653c6fa54a77c85",
     "status": {

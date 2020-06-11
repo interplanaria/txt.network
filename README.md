@@ -34,6 +34,14 @@ Check out some examples:
 2. [C.txt](https://c.planaria.network): A Bitcoin File Search Engine, powered by TXT.
 
 
+---
+
+# Changelog
+
+To check out the entire feature update and upgrade history, see here:
+
+<a href='/#/changelog' class='btn'>Change Log</a>
+
 
 ---
 

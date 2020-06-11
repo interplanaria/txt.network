@@ -9,6 +9,7 @@ services:
       - NAME=
       - DESCRIPTION=
       - MINER_URL=https://merchantapi.matterpool.io
+      - README_URL=
       - TOKEN=
     ports:
       - "3013:3013"

@@ -9,6 +9,7 @@ services:
       - NAME=
       - DESCRIPTION=
       - MINER_URL=https://merchantapi.taal.com
+      - README_URL=
       - TOKEN=
     ports:
       - "3013:3013"

@@ -122,6 +122,10 @@ pre {
   max-width: 800px;
   width: 100%;
 }
+.markdown-section a {
+  text-decoration: none;
+  color: cornflowerblue;
+}
 .markdown-section img {
   width: 100%;
 }
